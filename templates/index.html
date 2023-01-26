@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+<html>
+    <head>
+        <title>{{ tittle }} - EventZ</title>
+        </head>
+        <body>  
+    <h1> EventZ </h1>
+    <h2>
+        <form action="/tasks" method="post">
+            <label for="title">Name of Event:</label>
+            <input type="BlockBusters-Is-Back" name="name_of_event" id="title"> 
+            <br>
+            <br>
+            <br>
+            <label for="date">Date:</label>
+            <input type="datetime_local" name="date" id="date">
+            <br>
+            <br>
+            <br>
+            <label for="details">Number of Guests:</label>
+            <input type="120"name="number_of_guests" id="details">
+            <br>
+            <br>
+            <br>
+            <label for="details">Room Location:</label>
+            <input type="Al Pacinos Living-room"name="room_location" id="details">
+            <br>
+            <br>
+            <br>
+            <label for="description">Description:</label>
+            <input type="2000s Themed Party"name="description" id="description">
+            <input type="submit" value="Are you ready to party?"> 
+            </h2>
+</head>
+</html>
+
+{% endblock %}
